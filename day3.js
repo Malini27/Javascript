@@ -1,9 +1,9 @@
 //OBJECT
-/*let obj1={
+let obj1={
     name:"malini",
     age:21
 }
-console.log(obj1.age)*/
+console.log(obj1.age)
 
 //NESTED OBJECT
 /*let obj1={
@@ -61,9 +61,31 @@ console.log(obj1.num)*/
     }
 }
 delete obj1.age;
-console.log(obj1.age)*/
+console.log(obj1.age)
 
 //CONSTRUCTOR
+function namelist(fname,lname,num){
+    this.firstname=fname;
+    this.lastname=lname;
+    this.number=num;
+}
+let user1=new namelist("malini","raj",567)//object creation
+let user2=new namelist("kousi","raj",1234)
+console.log(user2);
+
+//DESTRUCTOR
+let obj={
+    name:"malini",
+    age:21,
+    sub:{
+        tamil:67,
+        english:90
+    }
+}
+const{name,age,sub:{tamil,english}}=obj;
+console.log(name);
+console.log(tamil);*/
+
 
 
 
